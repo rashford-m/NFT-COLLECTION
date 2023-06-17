@@ -50,7 +50,7 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
 
     function mint() public payable {
         require(presaleStarted && block.timestamp >= presaleEnded, "Presale has not ended yet" );
-        
+        require(tokenIds > maxTokenIds, "Exceeded the limit");
     }
 }
 
