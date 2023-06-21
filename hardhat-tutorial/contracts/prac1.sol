@@ -16,5 +16,8 @@ contract Variables {
      by the contract and can also be read by the external world
     */
    uint8 public u8 = 10;
+   uint public u256 = 600;
+   uint public u = 1230; // uint is an alias for uint256
    
+
 }
