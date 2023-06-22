@@ -49,8 +49,14 @@ contract Variables {
         ******** Global variables **********
         */
 
+       /*
+            block.timestamp tells us whats the timestamp for the current block
+            msg.sender tells us which address called the doSomething function
+        */
+uint timestamp = block.timestamp; // current block timestamp
+
+address sender = msg.sender; // addresss of  the caller 
+
 
   }
-
-
 }
